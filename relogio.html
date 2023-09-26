@@ -10,12 +10,26 @@
             background-color: black;
             margin: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
 
-        
+        #profile {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Torna a imagem circular */
+            margin-bottom: 20px;
+        }
+
+        #name {
+            color: white;
+            font-size: 24px;
+            font-family: Verdana;
+            margin: 0;
+        }
+
         #clock {
             color: white;
             font-size: 10em;
@@ -24,6 +38,8 @@
     </style>
 </head>
 <body>
+    <img id="profile" src="/downloads/relogio/jhonatas.png" alt="foto">
+    <h1 id="name">Jhonatas Emilio Torres</h1>
     <div id="clock"></div>
 
     <script>
@@ -38,7 +54,6 @@
         
         setInterval(updateClock, 1000);
 
-        
         updateClock();
     </script>
 </body>
